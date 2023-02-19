@@ -4,7 +4,7 @@ function App() {
       Master the Art of Programming.
       <p>Some changes added</p>
       <p>Some other changes added</p>
-      <p>Some more other changes added</p>
+      <p>Some more more other changes added</p>
     </div>
   );
 }
