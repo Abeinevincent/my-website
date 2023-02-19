@@ -6,6 +6,7 @@ function App() {
       <p>
         Good news, all set, project can now commence since all is good good!
       </p>
+      <p>All set</p>
       <button>Sample Button clicked: ButtonCountHere</button>
     </div>
   );
