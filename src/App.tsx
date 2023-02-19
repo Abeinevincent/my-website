@@ -3,6 +3,7 @@ function App() {
     <div className="App">
       Master the Art of Programming.
       <p>Some changes added</p>
+      <p>Some other changes added</p>
     </div>
   );
 }
