@@ -34,7 +34,6 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_BUILD_HOOK_ID: ${{ secrets.NETLIFY_BUILD_HOOK_ID }}
         run: |
-          curl -X POST -H "Content-Type: application/json" \
-            -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
-            -d '{"trigger_branch": "master"}' \
-            https://api.netlify.com/build_hooks/$NETLIFY_BUILD_HOOK_ID
+          curl -X POST -d {} "https://api.netlify.com/build_hooks/$NETLIFY_BUILD_HOOK_ID" \
+          --header "Content-Type: application/json" \
+          --header "Authorization: Bearer $NETLIFY_AUTH_TOKEN"
