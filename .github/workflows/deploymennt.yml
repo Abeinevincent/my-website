@@ -32,8 +32,9 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_BUILD_HOOK_ID: ${{ secrets.NETLIFY_BUILD_HOOK_ID }}
         run: |
           curl -X POST -H "Content-Type: application/json" \
             -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
             -d '{"trigger_branch": "master"}' \
-            https://api.netlify.com/api/v1/sites/$NETLIFY_SITE_ID/builds
+            https://api.netlify.com/build_hooks/$NETLIFY_BUILD_HOOK_ID
