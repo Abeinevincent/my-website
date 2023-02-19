@@ -1,10 +1,9 @@
+import { useState } from "react";
+
 function App() {
   return (
     <div className="App">
-      Master the Art of Programming.
-      <p>Some changes added</p>
-      <p>Some other changes added</p>
-      <p>Some more more other changes added</p>
+      <button>Sample Button clicked: ButtonCountHere</button>
     </div>
   );
 }
