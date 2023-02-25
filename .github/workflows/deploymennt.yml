@@ -30,33 +30,17 @@ jobs:
       - run: npm run test
       - run: npm run build --if-present
 
-  # deploy:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Trigger Netlify build
-  #       env:
-  #         NETLIFY_BUILD_HOOK_ID: ${{ secrets.NETLIFY_BUILD_HOOK_ID }}
-  #         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-  #         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-  #       run: |
-  #         curl -X POST -d {} "https://api.netlify.com/build_hooks/$NETLIFY_BUILD_HOOK_ID" \
-  #         --header "Content-Type: application/json" \
-  #         --header "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
-  #         --header "Netlify-Site-Id: $NETLIFY_SITE_ID"
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'push' }}
     steps:
       - name: Trigger Netlify build
         env:
           NETLIFY_BUILD_HOOK_ID: ${{ secrets.NETLIFY_BUILD_HOOK_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          run: |
-            curl -X POST -d {} "https://api.netlify.com/build_hooks/$NETLIFY_BUILD_HOOK_ID" \
-            --header "Content-Type: application/json" \
-            --header "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
-            --header "Netlify-Site-Id: $NETLIFY_SITE_ID"
+        run: |
+          curl -X POST -d {} "https://api.netlify.com/build_hooks/$NETLIFY_BUILD_HOOK_ID" \
+          --header "Content-Type: application/json" \
+          --header "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+          --header "Netlify-Site-Id: $NETLIFY_SITE_ID"
