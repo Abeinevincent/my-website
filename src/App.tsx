@@ -1,10 +1,11 @@
+import { Button } from "@chakra-ui/react";
 import { Home } from "./pages/home/Home";
 
 function App() {
   return (
     <div className="App">
       <Home />
-      <p>More testing</p>
+      <Button>Sample Button clicked: ButtonCountHere</Button>
     </div>
   );
 }

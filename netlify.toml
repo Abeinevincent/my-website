@@ -1,3 +1,0 @@
-[build]
-  command = "npm prune --production && npm install --force && npm run build --quiet"
-  publish = "public"
