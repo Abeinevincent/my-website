@@ -1,7 +1,11 @@
-import React from 'react'
+import Announcement from "../../components/layout/header/Announcement";
+import { Navbar } from "../../components/layout/header/Navbar";
 
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <Announcement />
+      <Navbar />
+    </div>
+  );
+};

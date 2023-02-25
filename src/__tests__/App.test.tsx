@@ -18,6 +18,6 @@ test("Renders app component correctly", async () => {
   user.click(buttonCount);
 
   // Post expectations
-  //   expect(true).toBeTruthy();
+  // expect(true).toBeTruthy();
   expect(buttonCount.innerHTML).toBe("Sample Button clicked: ButtonCountHere");
 });

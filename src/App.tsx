@@ -1,12 +1,9 @@
-import { useState } from "react";
+import { Home } from "./pages/home/Home";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Good news, all set, project can now commence since all is good good!
-      </p>
-      <p>All set, lets start</p>
+      <Home />
       <button>Sample Button clicked: ButtonCountHere</button>
     </div>
   );
