@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <Home />
-      <button>Sample Button clicked: ButtonCountHere</button>
+      <p>More testing</p>
     </div>
   );
 }
