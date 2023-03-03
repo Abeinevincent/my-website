@@ -21,7 +21,7 @@ const Announcement = () => {
           justifyContent={"space-around"}
         >
           <Icon color="white" as={BsEnvelope} />
-          <Text color={"white"}>codewithvicent@gmail.com</Text>
+          <Text color={"white"}>codewithvincent@gmail.com</Text>
         </Box>
         <Box
           display="flex"
