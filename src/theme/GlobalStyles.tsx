@@ -1,6 +1,7 @@
 export const PrimaryColor = "#000080";
 
-export const PrimaryYellowColor = "#ffbf00";
+// export const PrimaryYellowColor = "yellow";
+export const PrimaryYellowColor = "#FFD166";
 
 export const SecondaryColor = "#5850c5";
 
