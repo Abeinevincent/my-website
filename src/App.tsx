@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <Home />
-      <Button>Sample Button clicked: ButtonCountHere</Button>
     </div>
   );
 }

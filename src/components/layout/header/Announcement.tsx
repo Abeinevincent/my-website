@@ -23,7 +23,11 @@ const Announcement = () => {
           alignItems="center"
           justifyContent={"space-around"}
         >
-          <Icon color={PrimaryYellowColor} as={BsEnvelope} />
+          <Icon
+            color={PrimaryYellowColor}
+            as={BsEnvelope}
+            data-testid="email-icon"
+          />
           <Text color={"white"}>codewithvincent@gmail.com</Text>
         </Box>
         <Box
@@ -37,6 +41,7 @@ const Announcement = () => {
             colorScheme={"yellow"}
             variant="solid"
             py={0.5}
+            height={8}
           >
             Donate
           </Button>
