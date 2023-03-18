@@ -47,7 +47,7 @@ const NavBar = () => {
   const [active, setActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setActive(true);
+      window.scrollY > 0 ? setActive(true) : setActive(false);
     });
   }, []);
   const toggle = () => setIsOpen(!isOpen);
@@ -65,6 +65,7 @@ const NavBar = () => {
         py={6}
         position={active ? "fixed" : "sticky"}
         top={0}
+        transition={"0.5s all ease"}
         bg={
           !active
             ? ["primary.500", "primary.500", "white", "white"]
