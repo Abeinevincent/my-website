@@ -2,10 +2,10 @@ import { Flex, Box, Text, Icon, Stack, Button } from "@chakra-ui/react";
 import { TertiaryColor, PrimaryYellowColor } from "../../../theme/GlobalStyles";
 import { BsEnvelope } from "react-icons/bs";
 import { FaDonate } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Announcement = () => {
   return (
-    // <Box bg={TertiaryColor} h={12}>
     <>
       <Box
         display={{ base: "none", md: "flex" }}
@@ -51,15 +51,20 @@ const Announcement = () => {
         display={{ base: "flex", md: "none" }}
         bg={TertiaryColor}
         h={12}
+        position='fixed'
+        bottom={0}
+        width='100%'
         color="white"
         alignItems="center"
         flexWrap={"wrap"}
         justifyContent={"center"}
         style={{ alignItems: "center!important" }}
       >
-        <Text textAlign={"center"} fontSize={13}>
+        <Text textAlign={"center"} color={"white"} fontSize={13}>
           Support our charity and mission. Donate to{" "}
-          <a href="#">codewithvincent</a>
+          <Link to="/" style={{ textDecoration: "underline" }}>
+            codewithvincent
+          </Link>
         </Text>
       </Box>
     </>

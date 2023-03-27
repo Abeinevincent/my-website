@@ -1,4 +1,5 @@
 import { Box, Stack, Button } from "@chakra-ui/react";
+import { FaDonate } from "react-icons/fa";
 import { MenuItem } from "./MenuItem";
 
 export const MenuLinks = ({
@@ -20,36 +21,43 @@ export const MenuLinks = ({
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem active={active} to="/">
+        <MenuItem bdr={"bdr"} active={active} to="/">
           Home
         </MenuItem>
-        <MenuItem active={active} to="/about">
-          About
+        <MenuItem bdr={"bdr"} active={active} to="/about">
+          Courses
         </MenuItem>
-        <MenuItem active={active} to="/newsandupdates">
-          News & Updates
+        <MenuItem bdr={"bdr"} active={active} to="/newsandupdates">
+          Tutorials
         </MenuItem>
-        <MenuItem active={active} to="/contact">
-          Contact{" "}
+        <MenuItem bdr={"bdr"} active={active} to="/contact">
+          Data Structures
         </MenuItem>
-        <MenuItem active={active} to="/academia">
-          Academia{" "}
+        <MenuItem bdr={"bdr"} active={active} to="/academia">
+          Algorithms
+        </MenuItem>
+        <MenuItem bdr={"bdr"} active={active} to="/">
+          Login
         </MenuItem>
         <MenuItem active={active} to="/">
-          Register
-        </MenuItem>
-        <MenuItem active={active} to="/" isLast>
-          <Button
-            size="sm"
-            rounded="md"
-            color={["primary.500", "primary.500", "white", "white"]}
-            bg={["white", "white", "primary.500", "primary.500"]}
-            _hover={{
-              bg: ["primary.100", "primary.100", "primary.600", "primary.600"],
-            }}
+          <Box
+            display="flex"
+            gap={2}
+            alignItems="center"
+            justifyContent={"space-around"}
           >
-            Create Account
-          </Button>
+            <Button
+              leftIcon={<FaDonate />}
+              colorScheme={"yellow"}
+              color="white"
+              variant="solid"
+              py={4.5}
+              height={8}
+              borderRadius={25}
+            >
+              Donate
+            </Button>
+          </Box>
         </MenuItem>
       </Stack>
     </Box>

@@ -1,4 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
+import { PrimaryColor } from "../../../theme/GlobalStyles";
 
 type LogoProps = {
   w: string;
@@ -8,7 +9,8 @@ type LogoProps = {
 export const Logo = (props: LogoProps) => {
   return (
     <Box {...props}>
-      <Text fontSize={"lg"} fontWeight="bold">
+      <Text fontSize={"lg"} color={PrimaryColor} fontWeight="bold">
+        {/* CodeWithVicent */}
         <Image
           src={"https://ticketug.com/TICKETUG4.png"}
           alt="logo"

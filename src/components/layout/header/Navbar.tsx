@@ -47,7 +47,7 @@ const NavBar = () => {
   const [active, setActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 0 ? setActive(true) : setActive(false);
+      // window.scrollY > 0 ? setActive(true) : setActive(false);
     });
   }, []);
   const toggle = () => setIsOpen(!isOpen);
@@ -61,15 +61,12 @@ const NavBar = () => {
         w="100vw"
         shadow={"lg"}
         px={12}
-        zIndex={999999}
         py={6}
-        position={active ? "fixed" : "sticky"}
+        position={{ base: "static", md: "fixed" }}
         top={0}
-        transition={"0.5s all ease"}
+        transition={"1.5s all ease"}
         bg={
-          !active
-            ? ["primary.500", "primary.500", "white", "white"]
-            : PrimaryColor
+          !active ? ["primary.500", "primary.500", "white", "white"] : "white"
         }
         color={["white", "white", "primary.700", "primary.700"]}
         {...props}
