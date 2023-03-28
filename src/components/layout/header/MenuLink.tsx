@@ -1,13 +1,16 @@
 import { Box, Stack, Button } from "@chakra-ui/react";
+import { useState } from "react";
 import { FaDonate } from "react-icons/fa";
 import { MenuItem } from "./MenuItem";
 
 export const MenuLinks = ({
   isOpen,
   active,
+  setIsOpen,
 }: {
   isOpen: boolean;
   active: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
     <Box
@@ -21,25 +24,48 @@ export const MenuLinks = ({
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem bdr={"bdr"} active={active} to="/">
+        <MenuItem bdr={"bdr"} setIsOpen={setIsOpen} active={active} to="/">
           Home
         </MenuItem>
-        <MenuItem bdr={"bdr"} active={active} to="/about">
+        <MenuItem setIsOpen={setIsOpen} bdr={"bdr"} active={active} to="/blog">
+          Blog
+        </MenuItem>
+        <MenuItem
+          setIsOpen={setIsOpen}
+          bdr={"bdr"}
+          active={active}
+          to="/courses"
+        >
           Courses
         </MenuItem>
-        <MenuItem bdr={"bdr"} active={active} to="/newsandupdates">
+        <MenuItem
+          setIsOpen={setIsOpen}
+          bdr={"bdr"}
+          active={active}
+          to="/tutorials"
+        >
           Tutorials
         </MenuItem>
-        <MenuItem bdr={"bdr"} active={active} to="/contact">
+        <MenuItem
+          setIsOpen={setIsOpen}
+          bdr={"bdr"}
+          active={active}
+          to="/datastructures"
+        >
           Data Structures
         </MenuItem>
-        <MenuItem bdr={"bdr"} active={active} to="/academia">
+        <MenuItem
+          setIsOpen={setIsOpen}
+          bdr={"bdr"}
+          active={active}
+          to="/algorithms"
+        >
           Algorithms
         </MenuItem>
-        <MenuItem bdr={"bdr"} active={active} to="/">
+        <MenuItem setIsOpen={setIsOpen} bdr={"bdr"} active={active} to="/login">
           Login
         </MenuItem>
-        <MenuItem active={active} to="/">
+        <MenuItem setIsOpen={setIsOpen} active={active} to="/">
           <Box
             display="flex"
             gap={2}

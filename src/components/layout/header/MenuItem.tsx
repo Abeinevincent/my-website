@@ -8,6 +8,7 @@ type MenuItemProps = {
   isLast?: boolean;
   to: To;
   bdr?: any;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 };
 
 export const MenuItem = ({
@@ -16,10 +17,16 @@ export const MenuItem = ({
   isLast,
   to = "/",
   bdr,
+  setIsOpen,
   ...rest
 }: MenuItemProps) => {
+
+  const handleLinkClick = () => {
+    setIsOpen(false)
+  }
+
   return (
-    <Link to={to}>
+    <Link to={to} onClick={handleLinkClick}>
       <Text
         borderBottom={bdr ? "3px solid transparent" : "none"}
         transition={"1.5s all linear"}

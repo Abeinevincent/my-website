@@ -1,31 +1,81 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import "./app.css";
+import DataStructures from "./pages/datastructures/DataStructures";
+import Blog from "./pages/blog/Blog";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import Courses from "./pages/courses/Courses";
+import Tutorials from "./pages/tutorials/Tutorials";
+import Algorithms from "./pages/algorithms/Algorithms";
+import Layout from "./components/layout/layout/Layout";
+import Faq from "./pages/faq/Faq";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <Layout>
+        {" "}
+        <Home />
+      </Layout>
+    ),
   },
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "datastructures",
+    element: (
+      <Layout>
+        <DataStructures />
+      </Layout>
+    ),
   },
-  // {
-  //   path: "contact",
-  //   element: <Contact />
-  // },
-  // {
-  //   path: "newsandupdates",
-  //   element: <News />
-  // },
-  // {
-  //   path: "gallery",
-  //   element: <Gallery />
-  // },
-  // {
-  //   path: "academia",
-  //   element: <Academia />
-  // },
+  {
+    path: "algorithms",
+    element: (
+      <Layout>
+        <Algorithms />{" "}
+      </Layout>
+    ),
+  },
+  {
+    path: "blog",
+    element: (
+      <Layout>
+        <Blog />{" "}
+      </Layout>
+    ),
+  },
+  {
+    path: "courses",
+    element: (
+      <Layout>
+        <Courses />{" "}
+      </Layout>
+    ),
+  },
+  {
+    path: "tutorials",
+    element: (
+      <Layout>
+        <Tutorials />{" "}
+      </Layout>
+    ),
+  },
+  {
+    path: "faqs",
+    element: (
+      <Layout>
+        <Faq />{" "}
+      </Layout>
+    ),
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "register",
+    element: <Register />,
+  },
 ]);
 
 export default function App() {

@@ -1,5 +1,6 @@
 import { Box, Image, Text } from "@chakra-ui/react";
-import { PrimaryColor } from "../../../theme/GlobalStyles";
+import { Link } from "react-router-dom";
+import LogoImage from "../../../assets/images/logotest.jpg";
 
 type LogoProps = {
   w: string;
@@ -9,14 +10,11 @@ type LogoProps = {
 export const Logo = (props: LogoProps) => {
   return (
     <Box {...props}>
-      <Text fontSize={"lg"} color={PrimaryColor} fontWeight="bold">
-        {/* CodeWithVicent */}
-        <Image
-          src={"https://ticketug.com/TICKETUG4.png"}
-          alt="logo"
-          width={60}
-        />
-      </Text>
+      <Link to="/">
+        <Text fontSize={45} color={"orange"} fontWeight="bold">
+          <Image src={LogoImage} alt="logo" />
+        </Text>
+      </Link>
     </Box>
   );
 };

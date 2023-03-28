@@ -59,7 +59,7 @@ const NavBar = () => {
         justify="space-between"
         wrap="wrap"
         w="100vw"
-        shadow={"lg"}
+        shadow={"md"}
         px={12}
         py={6}
         position={{ base: "static", md: "fixed" }}
@@ -83,7 +83,7 @@ const NavBar = () => {
         color={["white", "white", "primary.500", "primary.500"]}
       />
       <MenuToggle active={active} toggle={toggle} isOpen={isOpen} />
-      <MenuLinks active={active} isOpen={isOpen} />
+      <MenuLinks setIsOpen={setIsOpen} active={active} isOpen={isOpen} />
     </NavBarContainer>
   );
 };
