@@ -10,6 +10,7 @@ import Tutorials from "./pages/tutorials/Tutorials";
 import Algorithms from "./pages/algorithms/Algorithms";
 import Layout from "./components/layout/layout/Layout";
 import Faq from "./pages/faq/Faq";
+import Forum from "./pages/forum/Forum";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +42,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Blog />{" "}
+      </Layout>
+    ),
+  },
+  {
+    path: "forum",
+    element: (
+      <Layout>
+        <Forum />{" "}
       </Layout>
     ),
   },

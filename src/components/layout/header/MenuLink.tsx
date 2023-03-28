@@ -38,6 +38,9 @@ export const MenuLinks = ({
         >
           Courses
         </MenuItem>
+        <MenuItem setIsOpen={setIsOpen} bdr={"bdr"} active={active} to="/forum">
+          Forum
+        </MenuItem>
         <MenuItem
           setIsOpen={setIsOpen}
           bdr={"bdr"}
