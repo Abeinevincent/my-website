@@ -24,9 +24,6 @@ import {
   FaFly,
 } from "react-icons/fa";
 
-// import AppStoreBadge from "@/components/AppStoreBadge";
-// import PlayStoreBadge from "@/components/PlayStoreBadge";
-
 const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
@@ -118,6 +115,9 @@ export default function LargeWithAppLinksAndSocial() {
             <Link href={"#"}>Data Structures</Link>
             <Link href={"#"}>Algorithms</Link>
             <Link href={"#"}>Tutorials</Link>
+            <Link href={"#"}>YouTube</Link>
+            <Link href={"#"}>Login</Link>
+            <Link href={"#"}>Register</Link>
             <Link href={"#"}>Contact Us</Link>
             <Link href={"#"}>Privacy Policy</Link>
             <Link href={"#"}>Cookies Policy</Link>
@@ -130,8 +130,9 @@ export default function LargeWithAppLinksAndSocial() {
             <Link href={"#"}>TypeScript Full Course</Link>
             <Link href={"#"}>JavaScript Data Structures</Link>
             <Link href={"#"}>JavaScript Algorithms</Link>
-            <Link href={"#"}>React Hooks</Link>
+            <Link href={"#"}>React Full Course</Link>
             <Link href={"#"}>React With TypeScript</Link>
+            <Link href={"#"}>NextJS Full Course</Link>
             <Link href={"#"}>React Native Full Course</Link>
             <Link href={"#"}>React Native With TypeScript</Link>
             <Link href={"#"}>TensorflowJS Full Course</Link>
@@ -149,13 +150,14 @@ export default function LargeWithAppLinksAndSocial() {
             <Link href={"#"}>Documenting React Components with Storybook</Link>
             <Link href={"#"}>JavaScript Closures Explained</Link>
             <Link href={"#"}>Documenting Express APIS with Postman</Link>
-            <Link href={"#"}></Link>
-            <Link href={"#"}>JavaScript Closures Explained</Link>
+            <Link href={"#"}>How to Build a React Component Library with TypeScript and Deploy it on NPM</Link>
+            <Link href={"#"}>How to Build a NodeJS Library with TypeScript and Deploy it on NPM</Link>
+            <Link href={"#"}>JavaScript Closures Explained in Plain English</Link>
             <Link href={"#"}>React Query Explained in Plain English</Link>
             <Link href={"#"}>How to Loop Through an Array in Javascript</Link>
-            <Link href={"#"}>React Query Explained in Plain English</Link>
             <Link href={"#"}>How to Test Express APIs with Jest</Link>
             <Link href={"#"}>How to Document Express APIs with Swagger</Link>
+            <Link href={"#"}>How to Set Up a  Testing Environment With Jest for a React TypeScript App</Link>
           </Stack>
 
           <Stack align={"flex-start"}>

@@ -1,6 +1,7 @@
 import { Box, Stack, Button } from "@chakra-ui/react";
 import { useState } from "react";
 import { FaDonate } from "react-icons/fa";
+import { PrimaryYellowColor } from "../../../theme/GlobalStyles";
 import { MenuItem } from "./MenuItem";
 
 export const MenuLinks = ({
@@ -77,7 +78,7 @@ export const MenuLinks = ({
           >
             <Button
               leftIcon={<FaDonate />}
-              colorScheme={"yellow"}
+              colorScheme={PrimaryYellowColor}
               color="white"
               variant="solid"
               py={4.5}
