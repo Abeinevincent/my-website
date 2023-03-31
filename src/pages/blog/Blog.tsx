@@ -37,7 +37,7 @@ const Blog = () => {
               </TabList>
               <Flex
                 align={"center"}
-                display={{base: "none", lg: "flex"}}
+                display={{base: "none", md: "none", lg: "flex"}}
                 _focus={{
                   outline: "none",
                   border: "1px solid #ccc",

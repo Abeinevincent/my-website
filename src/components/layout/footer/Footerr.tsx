@@ -126,20 +126,18 @@ export default function LargeWithAppLinksAndSocial() {
           <Stack align={"flex-start"}>
             <ListHeader>Courses</ListHeader>
             <Link href={"#"}>HTMl & CSS</Link>
-            <Link href={"#"}>Modern JavaScript</Link>
+            <Link href={"#"}>Modern JavaScript Full Course</Link>
             <Link href={"#"}>TypeScript Full Course</Link>
-            <Link href={"#"}>JavaScript Data Structures</Link>
-            <Link href={"#"}>JavaScript Algorithms</Link>
+            <Link href={"#"}>JS Data Structures & Algorithms</Link>
             <Link href={"#"}>React Full Course</Link>
-            <Link href={"#"}>React With TypeScript</Link>
             <Link href={"#"}>NextJS Full Course</Link>
+            <Link href={"#"}>SolidJS Full Course</Link>
             <Link href={"#"}>React Native Full Course</Link>
-            <Link href={"#"}>React Native With TypeScript</Link>
             <Link href={"#"}>TensorflowJS Full Course</Link>
             <Link href={"#"}>BrainJS Full Course</Link>
             <Link href={"#"}>NodeJS & Express With MongoDB</Link>
             <Link href={"#"}>NodeJS & Express With Sequelize & MySQL</Link>
-            <Link href={"#"}>Docker Full Course</Link>
+            <Link href={"#"}>Docker With NodeJS Full Course</Link>
             <Link href={"#"}>Kubernetes Full Course</Link>
             <Link href={"#"}>GIT Full Course</Link>
             <Link href={"#"}>AWS Full Course</Link>
@@ -154,7 +152,6 @@ export default function LargeWithAppLinksAndSocial() {
             <Link href={"#"}>How to Build a NodeJS Library with TypeScript and Deploy it on NPM</Link>
             <Link href={"#"}>JavaScript Closures Explained in Plain English</Link>
             <Link href={"#"}>React Query Explained in Plain English</Link>
-            <Link href={"#"}>How to Loop Through an Array in Javascript</Link>
             <Link href={"#"}>How to Test Express APIs with Jest</Link>
             <Link href={"#"}>How to Document Express APIs with Swagger</Link>
             <Link href={"#"}>How to Set Up a  Testing Environment With Jest for a React TypeScript App</Link>

@@ -38,7 +38,7 @@ const BlogPost = ({ language }: { language: string }) => {
           <Link to="">
             <Text
               _hover={{ textDecor: "underline" }}
-              fontSize={27}
+              fontSize={{base: 17, md: 20, lg: 27}}
               fontWeight={500}
               overflow="hidden"
             >
