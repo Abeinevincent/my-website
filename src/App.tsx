@@ -11,14 +11,23 @@ import Algorithms from "./pages/algorithms/Algorithms";
 import Layout from "./components/layout/layout/Layout";
 import Faq from "./pages/faq/Faq";
 import Forum from "./pages/forum/Forum";
+import NavBar from "./components/layout/header/Navbar";
+import { Footer } from "./components/layout/footer/Footer";
+import Announcement from "./components/layout/header/Announcement";
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Layout>
-        {" "}
+      // <Layout>
+      //   {" "}
+      //   <Home />
+      // </Layout>
+      <div>
+        <Announcement />
+        <NavBar />
         <Home />
-      </Layout>
+        <Footer />
+      </div>
     ),
   },
   {

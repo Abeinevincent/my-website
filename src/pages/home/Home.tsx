@@ -4,10 +4,8 @@ import Hero from "../../components/layout/hero/Hero";
 export const Home = () => {
   return (
     <Flex flexDirection={"column"}>
-      {/* <Announcement /> */}
-      {/* <Navbar /> */}
       <Hero />
-      <Box>
+      <Box p={{base: 5, md: 10, lg: 20}}>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
           deleniti id neque veritatis et maiores, voluptas laborum, placeat sint
