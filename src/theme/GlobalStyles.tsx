@@ -1,4 +1,5 @@
 export const PrimaryColor = "darkblue";
+export const PrimaryBasicColor = "#f7fafc";
 // export const PrimaryColor = "#000080";
 
 export const PrimaryYellowColor = "orange";

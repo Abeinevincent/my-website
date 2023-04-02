@@ -10,7 +10,7 @@ import {
 import { HomeInfo } from "../../api/fakeApi";
 import Hero from "../../components/layout/hero/Hero";
 import HomeComponent from "../../components/uicomponents/homecomponent/HomeComponent";
-import { PrimaryColor } from "../../theme/GlobalStyles";
+import { PrimaryBasicColor, PrimaryColor } from "../../theme/GlobalStyles";
 
 export const Home = () => {
   const isLargeDevice = useBreakpointValue({ base: false, md: true, lg: true });
@@ -27,12 +27,26 @@ export const Home = () => {
           justifyContent="center"
           flexDir={"column"}
         >
-          <Box w={{base: "100%", md: "80%", lg: "60%"}}>
+          {/* CHECKOUT OUT WISTIA FOR VIDEO HOSTING AFTER INCLUDING ACTUAL VIDEO */}
+          <Box bgColor={PrimaryBasicColor}>
+            <video width="720" height="450" controls>
+              <source
+                src="https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4"
+                type="video/ogg"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </Box>
+          <Box w={{ base: "100%", md: "80%", lg: "60%" }}>
             <Text
               textAlign={"center"}
               color={PrimaryColor}
               fontWeight={"bold"}
-              mb={3}
+              my={3}
             >
               Hi There
             </Text>
@@ -54,7 +68,13 @@ export const Home = () => {
                 you how to code.
               </Text>
             </Box>
-            <Flex flexDir={{base: "column", lg: "row"}} gap={5} align={"center"} justify="center" mt={7}>
+            <Flex
+              flexDir={{ base: "column", lg: "row" }}
+              gap={5}
+              align={"center"}
+              justify="center"
+              mt={7}
+            >
               <Box>
                 <Heading
                   textAlign={"center"}
@@ -111,6 +131,8 @@ export const Home = () => {
             <HomeComponent item={item} />
           ))}
         </Box>
+        {/* COURSES HERE-- */}
+        <Box>Courses</Box>
       </Box>
     </Flex>
   );
