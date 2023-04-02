@@ -93,7 +93,10 @@ export default function Login() {
           <FormControl isRequired id="password">
             <FormLabel>Password</FormLabel>
             <InputGroup>
-              <Input placeholder="Password" type={showPassword ? "text" : "password"} />
+              <Input
+                placeholder="Password"
+                type={showPassword ? "text" : "password"}
+              />
               <InputRightElement h={"full"}>
                 <Button
                   variant={"ghost"}
@@ -111,7 +114,7 @@ export default function Login() {
               direction={{ base: "column", sm: "row" }}
               align={"start"}
               justify={"space-between"}
-              fontSize={{base: 13, md: 15, lg: 16}}
+              fontSize={{ base: 13, md: 15, lg: 16 }}
             >
               <Checkbox>Remember me</Checkbox>
               <Link
@@ -158,8 +161,16 @@ export default function Login() {
             Continue with Google
           </Button>
         </Stack>
-        <Flex px={{ base: 6, lg: 1 }} justify={"space-around"} gap={3}>
-          <Box fontSize={12}> © {new Date().getFullYear()} CodeWithVicent</Box>
+        <Flex
+          px={{ base: 6, lg: 1 }}
+          justify={"space-around"}
+          align="center"
+          gap={3}
+        >
+          <Box fontSize={{ base: 8, md: 10, lg: 12 }}>
+            {" "}
+            © {new Date().getFullYear()} CodeWithVicent
+          </Box>
           <Box fontSize={12} _hover={{ color: PrimaryColor }}>
             <Link to="/">Terms of Service</Link>
           </Box>
@@ -168,7 +179,7 @@ export default function Login() {
           </Box>
         </Flex>
       </Flex>
-      <Flex flex={1}>
+      <Flex display={{ base: "none", md: "flex" }} flex={1}>
         <Image
           alt={"Login Image"}
           objectFit={"cover"}

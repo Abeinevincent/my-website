@@ -87,7 +87,7 @@ export default function LargeWithAppLinksAndSocial() {
               social or religious affliations at a free cost.
             </Text>
             <Text>
-              All the donations to CodeWIthVicent help expand the outreach of
+              All the donations to CodeWithVicent help expand the outreach of
               services rendered and maintain the servers used.
             </Text>
             <Text fontSize={16} fontWeight={500}>
