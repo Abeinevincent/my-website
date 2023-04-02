@@ -1,8 +1,17 @@
-import { Flex, Box, Heading, Code, Text, Button } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Heading,
+  Code,
+  Text,
+  Button,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { PrimaryYellowColor } from "../../../theme/GlobalStyles";
 
 const Hero = () => {
+  const isLargeDevice = useBreakpointValue({ base: false, md: true, lg: true });
   return (
     <Box>
       <Box
@@ -31,7 +40,7 @@ const Hero = () => {
           <Heading
             overflowY={"hidden"}
             color="white"
-            fontSize={55}
+            fontSize={{ base: 35, md: 45, lg: 55 }}
             mb={4}
             style={{ textAlign: "center" }}
           >
@@ -39,17 +48,17 @@ const Hero = () => {
             <span style={{ color: PrimaryYellowColor }}>VICENT</span>
           </Heading>
           <Text
-            fontSize={22}
+            fontSize={{ base: 18, md: 20, lg: 22 }}
             color="white"
             style={{
               textAlign: "center",
-              // textTransform: "uppercase",
               marginTop: "10px",
             }}
           >
-            I am Vicent Abeinemukama, a fullstack web and mobile engineer
-            <br /> by passion and with experience and expertise to help you
-            <br /> master atleast a skill in web and mobile development
+            We are an AI powered web-based application where anyone can learn to
+            {isLargeDevice && <br />} code for free and with mentorship. Learn a
+            Skill Today and Thank Me
+            {isLargeDevice && <br />} Later
           </Text>
           <Box
             display="flex"
