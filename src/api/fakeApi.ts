@@ -45,3 +45,21 @@ export const HomeInfo = [
     isRowReversed: true,
   },
 ];
+
+export const tutorialsData = [
+  {
+    title: "Tutorial 1",
+    description: "Description for Tutorial 1",
+    videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+  },
+  {
+    title: "Tutorial 2",
+    description: "Description for Tutorial 2",
+    videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+  },
+  {
+    title: "Tutorial 3",
+    description: "Description for Tutorial 3",
+    videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+  },
+];

@@ -142,7 +142,6 @@ export default function Login() {
           {/* Add the "Login with Google" button */}
           <Button
             // onClick={handleGoogleLogin}
-
             variant="outline"
             borderWidth="2px"
             borderColor="gray.200"
@@ -179,6 +178,8 @@ export default function Login() {
           </Box>
         </Flex>
       </Flex>
+
+      
       <Flex display={{ base: "none", md: "flex" }} flex={1}>
         <Image
           alt={"Login Image"}

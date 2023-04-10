@@ -14,6 +14,7 @@ import Forum from "./pages/forum/Forum";
 import NavBar from "./components/layout/header/Navbar";
 import { Footer } from "./components/layout/footer/Footer";
 import Announcement from "./components/layout/header/Announcement";
+import Donate from "./pages/donate/Donate";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -75,6 +76,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Tutorials />{" "}
+      </Layout>
+    ),
+  },
+  {
+    path: "donate",
+    element: (
+      <Layout>
+        <Donate />{" "}
       </Layout>
     ),
   },

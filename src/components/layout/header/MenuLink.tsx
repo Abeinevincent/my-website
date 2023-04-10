@@ -69,7 +69,7 @@ export const MenuLinks = ({
         <MenuItem setIsOpen={setIsOpen} bdr={"bdr"} active={active} to="/login">
           Login
         </MenuItem>
-        <MenuItem setIsOpen={setIsOpen} active={active} to="/">
+        <MenuItem setIsOpen={setIsOpen} active={active} to="/donate">
           <Box
             display="flex"
             gap={2}
