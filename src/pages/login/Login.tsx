@@ -11,6 +11,7 @@ import {
   Box,
   InputGroup,
   InputRightElement,
+  Divider,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { PrimaryColor } from "../../theme/GlobalStyles";
@@ -61,13 +62,7 @@ export default function Login() {
 
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-      <Flex
-        flexDir={"column"}
-        p={{ sm: 1, lg: 8 }}
-        flex={1}
-        align={"center"}
-        justify={"center"}
-      >
+      <Flex flexDir={"column"} p={{ sm: 1, lg: 6 }} flex={1} align={"center"}>
         <Stack bg="white" p={8} spacing={4} w={"full"} maxW={"md"}>
           <Link to="/">
             {" "}
@@ -136,9 +131,21 @@ export default function Login() {
               Sign In
             </Button>
           </Stack>
-          <Flex alignItems="center" my={4}>
-            <Flex flex="1" h="1px" bg="gray.200" ml="4"></Flex>
+
+          <Flex align={"center"}>
+            <Divider
+              colorScheme={"blackAlpha"}
+              w={{ base: "40%", lg: "45%" }}
+              my={6}
+            />
+            <Box p={2}>OR</Box>
+            <Divider
+              colorScheme={"blackAlpha"}
+              w={{ base: "40%", lg: "45%" }}
+              my={6}
+            />
           </Flex>
+
           {/* Add the "Login with Google" button */}
           <Button
             // onClick={handleGoogleLogin}
@@ -179,7 +186,6 @@ export default function Login() {
         </Flex>
       </Flex>
 
-      
       <Flex display={{ base: "none", md: "flex" }} flex={1}>
         <Image
           alt={"Login Image"}

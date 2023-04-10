@@ -11,6 +11,7 @@ import {
   Box,
   InputGroup,
   InputRightElement,
+  Divider,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { PrimaryColor } from "../../theme/GlobalStyles";
@@ -61,13 +62,7 @@ export default function Register() {
 
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-      <Flex
-        flexDir={"column"}
-        p={{ base: 1, lg: 8 }}
-        flex={1}
-        align={"center"}
-        justify={"center"}
-      >
+      <Flex flexDir={"column"} p={{ base: 1, lg: 6 }} flex={1} align={"center"}>
         <Stack bg="white" p={8} spacing={4} w={"full"} maxW={"md"}>
           <Link to="/">
             {" "}
@@ -91,9 +86,9 @@ export default function Register() {
             <FormLabel>Email address</FormLabel>
             <Input placeholder="Email" type="email" />
           </FormControl>
-          <FormControl isRequired id="username">
-            <FormLabel>Username</FormLabel>
-            <Input placeholder="Username" type="text" />
+          <FormControl isRequired id="fullname">
+            <FormLabel>Fullname</FormLabel>
+            <Input placeholder="Fullname" type="text" />
           </FormControl>
           <FormControl isRequired id="password">
             <FormLabel>Password</FormLabel>
@@ -129,8 +124,18 @@ export default function Register() {
               Register
             </Button>
           </Stack>
-          <Flex alignItems="center" my={4}>
-            <Flex flex="1" h="1px" bg="gray.200" ml="4"></Flex>
+          <Flex align={"center"}>
+            <Divider
+              colorScheme={"blackAlpha"}
+              w={{ base: "40%", lg: "45%" }}
+              my={6}
+            />
+            <Box p={2}>OR</Box>
+            <Divider
+              colorScheme={"blackAlpha"}
+              w={{ base: "40%", lg: "45%" }}
+              my={6}
+            />
           </Flex>
           {/* Add the "Register with Google" button */}
           <Button

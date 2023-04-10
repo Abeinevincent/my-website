@@ -19,7 +19,7 @@ import { PrimaryYellowColor } from "../../theme/GlobalStyles";
 const Blog = () => {
   return (
     <Flex
-      w={{base: "95%", md: "85%", lg: "60%"}}
+      w={{ base: "95%", md: "85%", lg: "60%" }}
       p={{ base: 0, md: 35 }}
       h="100%"
       align="center"
@@ -30,14 +30,18 @@ const Blog = () => {
         <Box>
           <Tabs>
             <Flex justify={"flex-start"}>
-              <TabList w={{base: "100%", lg: "50%"}} border={"none"} overflow={"hidden"}>
+              <TabList
+                w={{ base: "100%", lg: "50%" }}
+                border={"none"}
+                overflow={"hidden"}
+              >
                 <Tab fontSize={14}>Latest</Tab>
-                <Tab fontSize={14}>Recommended for You</Tab>
+                <Tab fontSize={14}>Recommended</Tab>
                 <Tab fontSize={14}>Trending</Tab>
               </TabList>
               <Flex
                 align={"center"}
-                display={{base: "none", md: "none", lg: "flex"}}
+                display={{ base: "none", md: "none", lg: "flex" }}
                 _focus={{
                   outline: "none",
                   border: "1px solid #ccc",

@@ -11,6 +11,8 @@ import {
   Box,
   InputGroup,
   InputRightElement,
+  Divider,
+  Text,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { PrimaryColor } from "../../theme/GlobalStyles";
@@ -30,22 +32,16 @@ const Donate = () => {
           }
         />
       </Flex>
-      <Flex
-        flexDir={"column"}
-        p={{ sm: 1, lg: 8 }}
-        flex={1}
-        align={"center"}
-        justify={"center"}
-      >
+      <Flex flexDir={"column"} p={{ sm: 1, lg: 8 }} flex={1} align={"center"}>
         <Stack bg="white" p={8} spacing={4} w={"full"} maxW={"md"}>
           <Heading overflowY={"hidden"} fontSize={{ base: "2xl", lg: "3xl" }}>
             Make a Secure Donation
           </Heading>
-
-          {/* <FormControl isRequired id="email">
-            <FormLabel>Email address</FormLabel>
-            <Input placeholder="Email" type="email" />
-          </FormControl> */}
+          <Text>
+            Suport CodeWithVicent's mission by donating something. Your donation
+            helps us create more awesome and top-notch courses. This helps
+            learners ace everything on one place.
+          </Text>
 
           <Stack spacing={6}>
             <Stack
@@ -92,34 +88,12 @@ const Donate = () => {
               bgColor={PrimaryColor}
               variant={"solid"}
             >
-              Donate Custom Amount One Time
+              Make a Custom One Time Donation
             </Button>
           </Stack>
-          <Flex alignItems="center" my={4}>
-            <Flex flex="1" h="1px" bg="gray.200" ml="4"></Flex>
+          <Flex mt={5} alignItems="center">
+            <Divider colorScheme={"black"} mt={6} />
           </Flex>
-
-          {/* Add the donate with card option */}
-          <Button
-            // onClick={handleGoogleLogin}
-            variant="outline"
-            borderWidth="2px"
-            borderColor="gray.200"
-            display={"flex"}
-            justifyContent="space-around"
-            borderRadius={5}
-          >
-            <BsCreditCard style={{ color: PrimaryColor }} />
-            {/* <Image
-              w={25}
-              h={25}
-              src={
-                "https://e7.pngegg.com/pngimages/415/124/png-clipart-mastercard-visa-bank-card-payment-mastercard-text-service.png"
-              }
-              alt=""
-            /> */}
-            Donate with Card
-          </Button>
         </Stack>
         <Flex
           px={{ base: 6, lg: 1 }}
@@ -129,9 +103,15 @@ const Donate = () => {
         >
           <Box
             fontSize={{ base: 12, md: 14, lg: 16 }}
-            textDecoration="underline"
+            // textDecoration="underline"
+            _hover={{ textDecoration: "underline" }}
           >
-            <Link to="/"> Frequently Asked Questions</Link>
+            <Link to="/">
+              <Box style={{ fontWeight: "bold" }}>
+                {" "}
+                Frequently Asked Questions
+              </Box>
+            </Link>
           </Box>
         </Flex>
       </Flex>
