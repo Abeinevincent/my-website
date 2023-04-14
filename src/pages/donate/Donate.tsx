@@ -106,7 +106,7 @@ const Donate = () => {
             // textDecoration="underline"
             _hover={{ textDecoration: "underline" }}
           >
-            <Link to="/">
+            <Link to="/faqs">
               <Box style={{ fontWeight: "bold" }}>
                 {" "}
                 Frequently Asked Questions

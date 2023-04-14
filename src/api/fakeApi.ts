@@ -63,3 +63,21 @@ export const tutorialsData = [
     videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
   },
 ];
+
+export const faqsData = [
+  {
+    question: "What is the meaning of life?",
+    answer:
+      "That's a philosophical question that has puzzled humanity for centuries. The answer is subjective and varies depending on who you ask.",
+  },
+  {
+    question: "How do I reset my passwob5fgbd?",
+    answer:
+      "You can reset your password by clicking on the 'Forgot Password' link on the login page and following the instructions.",
+  },
+  {
+    question: "What is the best programming language?",
+    answer:
+      "That's a subjective question and depends on your goals and preferences. Some popular programming languages include JavaScript, Python, Java, and C++.",
+  },
+];
