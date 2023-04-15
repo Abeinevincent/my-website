@@ -29,7 +29,7 @@ const Courses = () => {
     <Box
       display="flex"
       alignItems="center"
-      flexDirection={"column"}
+      flexDirection="column"
       justifyContent="center"
     >
       <Box>
