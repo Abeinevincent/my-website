@@ -1,5 +1,5 @@
 import FirstImage from "../assets/images/underconst.png";
-import CoverIMG from "../assets/images/cover.png";
+// import CoverIMG from "../assets/images/cover.png";
 
 export const HomeInfo = [
   {
@@ -62,14 +62,15 @@ export const tutorialsData = [
     description:
       "Everything about present day react. Hooks, react with typescript, react-query and everything else in plain English",
     videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
-    imgSrc: CoverIMG,
+    imgSrc: FirstImage,
   },
   {
     title: "HTML & CSS Complete Tutorial",
     description:
       "Build Magnicient and Stunning Websites with HTML and CSS. Everything you need to know explained in plain English ",
     videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
-    imgSrc: CoverIMG,
+    imgSrc:
+      "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png",
   },
   {
     title: "JavaScript ES6 Full Course",
