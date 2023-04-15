@@ -1,4 +1,6 @@
 import FirstImage from "../assets/images/underconst.png";
+import CoverIMG from "../assets/images/cover.png";
+
 export const HomeInfo = [
   {
     subHeading: "Top Notch Content",
@@ -48,19 +50,49 @@ export const HomeInfo = [
 
 export const tutorialsData = [
   {
-    title: "Tutorial 1",
-    description: "Description for Tutorial 1",
+    title: "NodeJS, Express with MongoDB Crash Course",
+    description:
+      "Build Magnicient and Stunning Websites with HTML and CSS. Everything you need to know explained in plain English",
+    videoSrc: "https://www.google.com",
+    imgSrc:
+      "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png",
+  },
+  {
+    title: "Modern React Full Tutorial",
+    description:
+      "Everything about present day react. Hooks, react with typescript, react-query and everything else in plain English",
     videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+    imgSrc: CoverIMG,
+  },
+  {
+    title: "HTML & CSS Complete Tutorial",
+    description:
+      "Build Magnicient and Stunning Websites with HTML and CSS. Everything you need to know explained in plain English ",
+    videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+    imgSrc: CoverIMG,
+  },
+  {
+    title: "JavaScript ES6 Full Course",
+    description:
+      "Lorem, facere minus! Deleniti veniam facere omnis tenetur saepe quidem! Repudiandae voluptatem officia nesciunt nostrum est dolorem delectus?",
+    videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+    imgSrc:
+      "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png",
   },
   {
     title: "Tutorial 2",
-    description: "Description for Tutorial 2",
+    description:
+      "Lorem, facere minus! Deleniti veniam facere omnis tenetur saepe quidem! Repudiandae voluptatem officia nesciunt nostrum est dolorem delectus?",
     videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+    imgSrc: FirstImage,
   },
   {
     title: "Tutorial 3",
-    description: "Description for Tutorial 3",
+    description:
+      "Lorem, facere minus! Deleniti veniam facere omnis tenetur saepe quidem! Repudiandae voluptatem officia nesciunt nostrum est dolorem delectus?",
     videoSrc: "https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.mp4",
+    imgSrc:
+      "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png",
   },
 ];
 

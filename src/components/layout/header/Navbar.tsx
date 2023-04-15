@@ -62,6 +62,7 @@ const NavBar = () => {
         shadow={"md"}
         px={12}
         py={6}
+        zIndex={99999}
         position={{ base: "static", md: "fixed" }}
         top={0}
         transition={"1.5s all ease"}

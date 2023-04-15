@@ -9,8 +9,8 @@ const Announcement = () => {
     <>
       <Box
         display={{ base: "none", md: "flex" }}
-        // gap={2}
         bg={TertiaryColor}
+        zIndex={99999}
         h={12}
         alignItems="center"
         flexWrap={"wrap-reverse"}
@@ -51,9 +51,10 @@ const Announcement = () => {
         display={{ base: "flex", md: "none" }}
         bg={TertiaryColor}
         h={12}
-        position='fixed'
+        position="fixed"
         bottom={0}
-        width='100%'
+        width="100%"
+        zIndex={9999}
         color="white"
         alignItems="center"
         flexWrap={"wrap"}

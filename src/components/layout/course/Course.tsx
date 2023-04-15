@@ -8,7 +8,7 @@ export interface TutorialProps {
   key: any;
 }
 
-const Tutorial = ({ tutorial }: any) => {
+const Course = ({ tutorial }: any) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -65,13 +65,9 @@ const Tutorial = ({ tutorial }: any) => {
         >
           {tutorial.description}
         </Box>
-        <Flex px={5} fontSize={{ base: 12, md: 13, lg: 14 }} gap={4}>
-          <Box color={PrimaryColor}>Project:</Box>
-          <Box>Car Selling Ecommerce Website</Box>
-        </Flex>
       </Box>
     </Link>
   );
 };
 
-export default Tutorial;
+export default Course;
