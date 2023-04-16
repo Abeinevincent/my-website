@@ -72,7 +72,7 @@ const Donate = () => {
               bgColor={PrimaryColor}
               variant={"solid"}
             >
-              Donate $20 /month
+              Donate $100 /month
             </Button>
             <Button
               color={"white"}
