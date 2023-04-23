@@ -41,7 +41,14 @@ const Tutorial = ({ tutorial }: any) => {
       transition="transform 0.3s ease-in-out"
     >
       <Box flex={1} bgColor={"white"}>
-        <Image src={tutorial.imgSrc} w="100%" h="16rem" objectFit={"cover"} />
+        <Image
+          src={tutorial.imgSrc}
+          borderTopLeftRadius={10}
+          borderTopRightRadius={10}
+          w="100%"
+          h="10rem"
+          objectFit={"cover"}
+        />
       </Box>
       <Box flex={1}>
         <Box
@@ -66,8 +73,8 @@ const Tutorial = ({ tutorial }: any) => {
           {tutorial.description}
         </Box>
         <Flex px={5} fontSize={{ base: 12, md: 13, lg: 14 }} gap={4}>
-          <Box color={PrimaryColor}>Project:</Box>
-          <Box>Car Selling Ecommerce Website</Box>
+          <Box color={"darkblue"}>CODE:</Box>
+          <Box>2000</Box>
         </Flex>
       </Box>
     </Link>
