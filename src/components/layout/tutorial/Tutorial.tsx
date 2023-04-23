@@ -16,7 +16,7 @@ const Tutorial = ({ tutorial }: any) => {
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    setIsHovered(false)
   };
 
   const scale = isHovered ? "scale(1.03)" : "scale(1)";
