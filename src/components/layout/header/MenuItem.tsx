@@ -8,7 +8,7 @@ type MenuItemProps = {
   isLast?: boolean;
   to: To;
   bdr?: any;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export const MenuItem = ({
@@ -20,10 +20,9 @@ export const MenuItem = ({
   setIsOpen,
   ...rest
 }: MenuItemProps) => {
-
   const handleLinkClick = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   return (
     <Link to={to} onClick={handleLinkClick}>

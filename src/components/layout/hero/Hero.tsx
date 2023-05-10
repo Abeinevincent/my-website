@@ -8,6 +8,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { PrimaryYellowColor } from "../../../theme/GlobalStyles";
 
 const Hero = () => {
@@ -66,22 +67,24 @@ const Hero = () => {
             alignItems="center"
             justifyContent={"space-around"}
           >
-            <Button
-              rightIcon={<FaArrowRight />}
-              // colorScheme={""}
-              backgroundColor="transparent"
-              border={`1px solid ${PrimaryYellowColor}`}
-              color="white"
-              variant="solid"
-              mt={5}
-              overflowY={"hidden"}
-              p={5}
-              height={8}
-              borderRadius={5}
-              _hover={{ backgroundColor: "orange", color: "white" }}
-            >
-              Get Started
-            </Button>
+            <Link to="/courses">
+              <Button
+                rightIcon={<FaArrowRight />}
+                // colorScheme={""}
+                backgroundColor="transparent"
+                border={`1px solid ${PrimaryYellowColor}`}
+                color="white"
+                variant="solid"
+                mt={5}
+                overflowY={"hidden"}
+                p={5}
+                height={8}
+                borderRadius={5}
+                _hover={{ backgroundColor: "orange", color: "white" }}
+              >
+                Get Started
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Box>

@@ -31,6 +31,7 @@ const Courses = () => {
       alignItems="center"
       flexDirection="column"
       justifyContent="center"
+      bg="#f8f8f8"
     >
       <Box>
         <Text
