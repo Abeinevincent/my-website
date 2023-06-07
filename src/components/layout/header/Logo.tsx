@@ -1,6 +1,6 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import LogoImage from "../../../assets/images/logotest.jpg";
+import LogoImage from "../../../assets/images/logotest.png";
 
 type LogoProps = {
   w: string;

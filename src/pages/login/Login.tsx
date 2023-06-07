@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { PrimaryColor } from "../../theme/GlobalStyles";
-import Logo from "../../assets/images/logotest.jpg";
+import Logo from "../../assets/images/logotest.png";
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
